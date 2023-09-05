@@ -3,23 +3,23 @@ public class MinhaClasse {
     //letra da segunda palavra começa maiúscula, se for mais de duas palavras, a partir da segunda palavra,
     //todas inicia-se com maiúscula (camelCase); 
 
-public static void main (String [] args){
+    public static void main(String [] args){
     
-    //CONTEÚDO STRINGS
-    System.out.print ("Olá Mundo");
-    final String BR = "Brasil"; //variáveis que não podem ser alteradas. inicia com final e o nome da var é toda maiúscula
-    int ano = 1989; //esta variável pode ser alterada
+        //CONTEÚDO STRINGS
+        System.out.println("Olá Mundo");
+        final String BR = "Brasil"; //variáveis que não podem ser alteradas. inicia com final e o nome da var é toda maiúscula
+        int ano = 1989; //esta variável pode ser alterada
     
-    String meuNome = "Julio";
-    int anoFabricacao = 2023;
-    boolean verdadeira = false; //variável lógica, retorna true ou false
-    anoFabricacao = 1989; //alterando o valor de uma variável
+        String meuNome = "Julio";
+        int anoFabricacao = 2023;
+        boolean verdadeira = false; //variável lógica, retorna true ou false
+        anoFabricacao = 1989; //alterando o valor de uma variável
 
-    //CONTEÚDOS MÉTODOS
+        //CONTEÚDOS MÉTODOS
 
-    //int somar (int numeroUm, int numero2); //um método pode receber parâmetros de tipos diferentes
-    //String formatarCep (long cep);
-}
+        //int somar (int numeroUm, int numero2); //um método pode receber parâmetros de tipos diferentes
+        //String formatarCep (long cep);
+    }
 
 }
 /* String BR = "Brasil;
