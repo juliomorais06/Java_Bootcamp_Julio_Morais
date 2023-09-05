@@ -4,11 +4,12 @@ public class MinhaClasse {
     //todas inicia-se com maiúscula (camelCase); 
 
 public static void main (String [] args){
+    
     //CONTEÚDO STRINGS
     System.out.print ("Olá Mundo");
     final String BR = "Brasil"; //variáveis que não podem ser alteradas. inicia com final e o nome da var é toda maiúscula
     int ano = 1989; //esta variável pode ser alterada
-    Dog spike; //observe que aqui a variável spike não tem valor
+    
     String meuNome = "Julio";
     int anoFabricacao = 2023;
     boolean verdadeira = false; //variável lógica, retorna true ou false
@@ -16,8 +17,8 @@ public static void main (String [] args){
 
     //CONTEÚDOS MÉTODOS
 
-    int somas (int numeroUm, int numero2) //um método pode receber parâmetros de tipos diferentes
-    String formatarCep (long cep)
+    //int somar (int numeroUm, int numero2); //um método pode receber parâmetros de tipos diferentes
+    //String formatarCep (long cep);
 }
 
 }

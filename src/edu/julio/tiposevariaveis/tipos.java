@@ -1,4 +1,4 @@
-public class tipos implements Escape {  
+public class tipos {  
     byte idade = 33;
     short ano = 1989;
     int cep = 89089502;
