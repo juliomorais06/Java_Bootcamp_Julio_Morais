@@ -1,0 +1,15 @@
+#Estruturas condicionais: if-else, switch-case
+
+    ## if(condicao) //Condicional simples - uma jornada de execução
+    ## if(condicao) {}else{} //Condicional composta - duas jornadas de execução
+    ## if(condicao) {}else if(condicao){} else{} //Estruturas encadeadas - mais de uma condição
+    ## Condição ternária - Variavel = Variavel1 + condicao ? "resultado1" : "resultado2";
+        - condicao ? "res1" : condicao ? "res2" : "res3"
+    ## switch(variavel) {
+        case "ex":{ação;break;}
+        default:ação;
+
+    }
+#Estruturas de repetição: for, while, do-while
+
+#Estruturas de exceções: try-catch-finally, throw

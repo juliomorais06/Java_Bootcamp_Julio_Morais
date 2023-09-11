@@ -1,10 +1,12 @@
 {
     "java.project.sourcePaths": [
         "src/edu/julio/tiposevariaveis",
+        "src/edu/julio/palavrasreservadas",
         "src/edu/julio/operadores",
         "src/edu/julio/metodos",
+        "src/edu/julio/estruturas",
         "src/edu/julio/escopo",
-        "src/edu/julio/palavrasreservadas"
+        "src/edu/estruturas/controleDeFluxo"
     ],
     "java.project.outputPath": "bin",
     "java.project.referencedLibraries": [
