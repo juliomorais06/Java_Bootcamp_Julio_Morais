@@ -6,10 +6,12 @@
         "src/edu/julio/metodos",
         "src/edu/julio/estruturas",
         "src/edu/julio/escopo",
-        "src/edu/estruturas/controleDeFluxo"
+        "src/edu/julio",
+        "src"
     ],
     "java.project.outputPath": "bin",
     "java.project.referencedLibraries": [
         "lib/**/*.jar"
-    ]
+    ],
+    "java.debug.settings.onBuildFailureProceed": true
 }

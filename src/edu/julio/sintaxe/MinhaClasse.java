@@ -1,3 +1,5 @@
+package sintaxe;
+
 public class MinhaClasse {
     // variáveis, exceto "final", sempre minúsculas, porém se for composta (mais de uma palavra), primeira
     //letra da segunda palavra começa maiúscula, se for mais de duas palavras, a partir da segunda palavra,

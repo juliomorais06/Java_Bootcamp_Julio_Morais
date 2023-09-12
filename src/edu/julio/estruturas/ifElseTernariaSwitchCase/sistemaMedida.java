@@ -1,3 +1,4 @@
+package ifElseTernariaSwitchCase;
 public class sistemaMedida {
     public static void main(String[] args) {
         String sigla = "g";

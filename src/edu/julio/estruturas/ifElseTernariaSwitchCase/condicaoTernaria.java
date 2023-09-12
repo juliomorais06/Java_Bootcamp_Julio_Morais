@@ -1,3 +1,4 @@
+package ifElseTernariaSwitchCase;
 public class condicaoTernaria {
     public static void main(String[] args) {
         int nota = 0;

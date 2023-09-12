@@ -1,3 +1,4 @@
+package ifElseTernariaSwitchCase;
 public class planoOperadora2 {
     public static void main(String[] args) {
         String plano = "B";

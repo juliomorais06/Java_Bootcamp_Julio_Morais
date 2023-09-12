@@ -1,3 +1,4 @@
+package ifElseTernariaSwitchCase;
 public class resultadoEscolar {
     public static void main(String[] args) {
         int nota = 8;

@@ -1,3 +1,5 @@
+package sintaxe;
+
 public class ConvencaoPacotes {
     //as empresas tem seguimentos:
         //comercial(com), organizacional(org) e opensource(org ou opensource)

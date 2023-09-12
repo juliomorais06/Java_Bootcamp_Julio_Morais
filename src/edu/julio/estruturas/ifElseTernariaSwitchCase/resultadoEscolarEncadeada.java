@@ -1,3 +1,4 @@
+package ifElseTernariaSwitchCase;
 public class resultadoEscolarEncadeada {
     public static void main(String[] args) {
         int nota = 6;

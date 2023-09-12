@@ -1,6 +1,7 @@
+package ifElseTernariaSwitchCase;
 public class planoOperadora {
     public static void main(String[] args) {
-        String plano = "m";
+        String plano = "M";
 
         if(plano == "B") {
             System.out.println("100 minutos de ligação");

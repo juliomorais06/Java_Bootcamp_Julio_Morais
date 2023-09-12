@@ -8,8 +8,67 @@
     ## switch(variavel) {
         case "ex":{ação;break;}
         default:ação;
-
     }
+        break - interrompe execução
+        continue - muda o fluxo e continua a execução 
 #Estruturas de repetição: for, while, do-while
 
+    ##for (bloco de inicialização;expressão booleana de validação;bloco de atualização){}
+    
+    ##while - testa a condição antes de executar o bloco
+            - //estrutura de controle de fluxo while
+            while(expressão booleana de validação)
+            {
+                //comando será executado até que a expressão
+                //de validação torne-se falsa
+            }
+    
+    ##do-while - executa pelo menos uma vez o bloco, depois testa a condição
+               - //estrutura do controle de fluxo do-while
+               do
+               {
+                    //comando que será executado até que a 
+                    //espressão de validação torne-se falsa
+               }
+               while (expressão booleana de validação);
+
 #Estruturas de exceções: try-catch-finally, throw
+
+    ##tratamento de exceções:
+
+        java.lang.NullPointerException - quando queremos obter alguma
+                                         informação de uma variável nula
+        
+        java.lang.ArithmeticException - quando tentamos dividir um valor por 0
+
+        java.sql.SQLException - quando existe algum erro relacionado a interação
+                                com banco de dados
+
+        java.io.FileNotFoundException - quando tentamos ler ou escrever em um 
+                                        arquivo que não existe
+
+        try(captura o erro) - permite que você defina um bloco de código para 
+                              ser testado quanto a erros enquanto está sendo 
+                              executado
+        //estrutura try
+        try {
+            // bloco de código conforme esperado
+        }
+
+        catch(trata o erro da melhor forma) - permite definir um bloco de 
+                                            código a ser executado, caso 
+                                            ocorra um erro no bloco try
+
+        try e catch vem em pares!
+
+        catch(Exception e) { // precisamos saber qual execução
+        //bloco de código que captura as exceções que podem acontecer
+        //em caso de um fluxo não previsto
+        }
+
+        finally - permite definir um bloco de código a ser executado 
+                  independente de ocorrer um erro ou não.
+
+        finally é opcional!
+
+# para avaliar o método basta segurar tecla Ctrl e clicar no método
