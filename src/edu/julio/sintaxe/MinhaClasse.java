@@ -10,12 +10,16 @@ public class MinhaClasse {
         //CONTEÚDO STRINGS
         System.out.println("Olá Mundo");
         final String BR = "Brasil"; //variáveis que não podem ser alteradas. inicia com final e o nome da var é toda maiúscula
+        System.out.println(BR);
         int ano = 1989; //esta variável pode ser alterada
-    
+        System.out.println(ano);
         String meuNome = "Julio";
+        System.out.println(meuNome);
         int anoFabricacao = 2023;
         boolean verdadeira = false; //variável lógica, retorna true ou false
+        System.out.println(verdadeira);
         anoFabricacao = 1989; //alterando o valor de uma variável
+        System.out.println(anoFabricacao);
 
         //CONTEÚDOS MÉTODOS
 
