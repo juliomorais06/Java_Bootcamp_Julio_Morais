@@ -83,3 +83,8 @@ de atributos de instâncias de classes.
 O método Getter retorna o valor do atributo especificado.
 
 O método Setter define outro novo valor para o atributo especificado.
+
+#Enums
+
+## É um tipo especial de classe onde os objetos são previamente criados,
+imutáveis e disponíveis por toda aplicação.
