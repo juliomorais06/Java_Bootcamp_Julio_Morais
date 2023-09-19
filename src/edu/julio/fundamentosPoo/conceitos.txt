@@ -1,0 +1,85 @@
+#Baixo nível: são linguagens que estão mais próxima da interpretação da máquina 
+diante do algorítmo desenvolvido. Exemplo : Liguagem Assembly e C
+
+#Alto nível: São linguagens que disponibilizam uma proposta de sintaxe 
+(forma de escrever processos para serem executados pelo computador) mais 
+próxima de interpretação humana. Exemplo: Java, Javascript, Python e C++.
+
+##Programação estruturada é um paradigma de programação que visa melhorar
+a clareza, a qualidade e o tempo de desenvolvimento de um programa de 
+computador, fazendo uso extensivo das construções de fluxo de controle
+estruturado de seleção (if/then/else) e repetição (while e for), estruturas
+de bloco e sub-rotinas. 
+
+##POO é um paradigma de programação baseado no conceito de "objetos", que
+podem conter dados na forma de campos, também conhecidos como atributos, 
+e códigos, na forma de procedimentos, também conhecidos como métodos.
+
+##Enquanto a programação estruturada é voltada a procedimentos e funções
+definidas pelo usuário, a programação orientada a objetos é voltada a 
+conceitos como o de classes e objetos.
+
+Classes:
+
+Toda a estrutura de código na linguagem Java é distribuído em arquivos com 
+extensão .java denominados de classe.
+
+As classes são compostas por: Identificador, Características e Comportamentos
+
+-Classe (class): A estrutura e ou representação que direciona a criação
+dos objetos de mesmo tipo.
+
+Identificador (identity): Propósito existencial aos objetos que serão criados.
+
+Características (states): Também conhecido como atributos ou propriedades,
+é toda informação que representa o estado do objeto.
+
+Comportamento (behavior): Também conhecido como ações ou métodos, é toda parte 
+comportamental que um objeto dispõe.
+
+Instanciar (new): É o ato de criar um objeto a partir de setrutura definida
+em uma classe.
+
+Segundo algumas converções, as nossas classes são classificadas como:
+
+Class de modelo (model):classes que representem estrutura de domínio
+da aplicação, exemplo: Cliente, Pedido, Nota Fiscal, etc.
+
+Classe de serviço (service): classes que contém regras de negócio e 
+validação de nosso sistema.
+
+Classe de repositório (repository): classes que contém uma integração
+com banco de dados.
+
+Classe de controle (controller): classes que possuem a finalidade de 
+disponibilizar alguma comunicação externa à nossa aplicação, tipo http
+web ou webservices.
+
+Classe utilitária (util): classe que contém recursos comuns à toda nossas
+aplicação.
+
+A linguagem dispõe de um recurso que organiza as classes padrão e criadas por 
+nós, que conhecemos como pacote (package). Os pacotes são subdiretórios a 
+partir da pasta src do nosso projeto onde estão localizadas as classes da 
+linguagem e novas que forem criadas para o projeto. Existem algumas convenções
+para criação de pacotes já utilizados no mercado.
+
+Modificadores:
+
+Utilizamos 3 palavras resevadas e um conceito default (sem nenhuma palavras
+reservada), para definir os quatro tiops de visibilidade de atributos, métodos
+e até mesmo classes no que se refere ao acesso por outras classes.
+
+Modificador public:
+
+Quando a classe, atributo ou método é definido como public, qualquer outra
+classe em qualquer outro pacote pode visualizas tais recursos.
+
+##Getters e Setters
+
+São utilizados para buscar valores de atributos ou definir novos valores
+de atributos de instâncias de classes.
+
+O método Getter retorna o valor do atributo especificado.
+
+O método Setter define outro novo valor para o atributo especificado.
