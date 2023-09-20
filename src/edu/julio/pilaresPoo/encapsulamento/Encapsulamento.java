@@ -1,4 +1,4 @@
-package pilaresPoo;
+package pilaresPoo.encapsulamento;
 
 public class Encapsulamento {
     public static void main(String[] args) {

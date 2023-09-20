@@ -1,4 +1,4 @@
-package pilaresPoo;
+package pilaresPoo.encapsulamento;
 
 public class EncapMSN {
     public void enviarMensagem() {
