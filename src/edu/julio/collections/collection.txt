@@ -1,0 +1,59 @@
+# São estruturas de dados que serve para agrupar muitos elementos
+em uma única unidade, esses ele,emtos precisam ser objetos.
+
+# Podem ter coleções homogêneas e heterogêgeas, normalmente
+utilizamos coleções homogêneas de um tipo específico.
+
+# O núcleo principal das coleções é formado por interfaces
+ que permitem manipular a coleção independente do nível de 
+ detalhe que elas representam.
+
+ # Temos 4 grandes tipos de coleções: List(lista), Set(conjunto),
+ Queue(fila) e Map(mapa), a partir dessas interfaces , temos 
+ muitas subclasses concretas que implementam várias formas 
+ diferentes de se trabalhar com cada coleção.
+
+ ## Generics Type
+
+    É uma classe genérica ou uma interface que é parametrizada
+    em relação a tipos. 
+    ex: public class Box<T> { // T representa "Type" (tipo)
+        private T t;
+
+        public void set (T t) { this.t = t;}
+        public T get() { return t; }
+    }
+    E - Elemento (usado extensivamente pelo Java Collections Framework)
+    K - Chave
+    N - Número
+    T - Tipo
+    V - Valor
+    S, U, V, etc. - 2º, 3º, 4º tipos.
+
+#Comparable X Comparator 
+
+Comparable - Fornece uma única sequência de ordenação, afeta a 
+             classe original, ou seja, a classe atual é modificada,
+             fornece o método compareTo() para ordenar elementos.
+             Está presente no pacote java.lang.
+             Podemos ordenar os elementos de uma lista do tipo
+             Comparable usando o método Collections.sort(List).
+
+Comparator - Fornece o métod copare() para ordenar elementos. 
+             Fornece múltiplas sequências de ordenação (podemos 
+             ordenar a coleção com base em múltiplos elementos,
+             como id, nome, preço, etc).
+             O comparator não afeta a classe original, ou seja,
+             a classe atual não é modificada.
+             Um comparator está presente no pacote java.util.
+             Podemos ordenar os elementos da lista do tipo Comparator 
+             usando o método Collections.sort(List, Comparator).
+
+Collections - A classe Collections é uma classe utilitária do java
+              para operações comuns em coleções.
+              Ela fornece métodos para ordenação, busca, manipulação
+              e sincronização de coleções.
+              O método sort() é usado para ordenar uma lista em ordem
+              ascendente.
+              O método sort() em conjunto com Collections.reverseOrder()
+              permite ordenar em ordem descendente.

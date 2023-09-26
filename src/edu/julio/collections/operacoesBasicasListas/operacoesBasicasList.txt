@@ -1,0 +1,112 @@
+https://github.com/cami-la/collections-java-api-2023
+
+A interface List é uma coleção ordenada que permite a inclusão de elementos duplicados.
+É um dos tipos mais utilizados em Java, e as classes de implementação comuns são ArrayList e LinkedList.
+A List se assemelha a uma matriz com comprimento dinâmico, permitindo adicionar ou remover elementos.
+A interface List fornece métodos úteis para adicionar elementos em posições específicas, remover ou substituir 
+elementos com base no índice e obter sublsitas usando índices.
+A classe Collections fornece algorítmos úteis para manipulação (sort), embaralhamento (shuffle, reversão (reverse) e busca binária (binarySearch).
+
+Projéto - collections -java-api-2023
+
+
+Operações Básicas com List
+1. Lista de Tarefas
+Crie uma classe chamada "ListaTarefas" que possui uma lista de tarefas como atributo. Cada tarefa é representada por uma classe chamada "Tarefa" que possui um atributo de descrição. Implemente os seguintes métodos:
+
+adicionarTarefa(String descricao): Adiciona uma nova tarefa à lista com a descrição fornecida.
+removerTarefa(String descricao): Remove uma tarefa da lista com base em sua descrição.
+obterNumeroTotalTarefas(): Retorna o número total de tarefas na lista.
+obterDescricoesTarefas(): Retorna uma lista contendo a descrição de todas as tarefas na lista.
+
+public class Tarefa {
+	//atributo
+	private String descricao;
+
+	//adicionar construtor
+	public Tarefa(String descricao) {
+		this.descricao = descricao;
+	}
+
+	//criar método get
+	public String getDescricao() {
+		return descricao;
+	}
+
+	//returnar descrição/ToString
+	public String toString() {
+	return descricao + '\'';
+	}
+}
+
+import java.util.List;
+
+public class ListaTarefa {
+	//atributo
+	private List<Tarefa> tarefaList;
+	
+	public ListaTarefa() {
+		this.tarefaList = new ArrayList<>();
+	}
+
+	public void adicionarTarefa(String descricao) {
+		tarefaList.add(new Tarefa(descricao));
+	}
+
+	public void removerTarefa(String descricao) {
+		List<Tarefa> tarefasParaRemover = new ArrayList<> ();
+		for(Terefa t : tarefaList) {
+			if(t.getDescricao().equalsIgnoreCase(descricao)) {
+				tarefasParaRemover.add(t);
+			}
+		}
+		tarefaList.removeAll(tarefasParaRemover);
+	}
+
+	public int obterNumeroTotalTarefas() {
+		return tarefaList.size();
+	}
+
+
+	public void obterDescricaoTarefas() {
+		System.out.println(tarefaList);
+	}
+
+	public static void main(String[] args) {
+		ListaTarefa listaTarefa = new ListaTarefa();
+
+		//para saber se já temos uma lista vazia
+		System.out.println("O número total de elementos na lista é: " + listaTarefa.obterNumeroTotalTarefas());
+
+		//adicionando tarefas à lista
+		//Ctrl d para duplicar a linha
+		listaTarefa.adicionarTarefa("Tarefa 1");
+		listaTarefa.adicionarTarefa("Tarefa 1");
+		listaTarefa.adicionarTarefa("Tarefa 2");
+		//a lista está com 3 elementos "Tarefa 1", "Tarefa 1" e "Tarefa 2".
+		System.out.println("O número total de elementos na lista é: " + listaTarefa.obterNumeroTotalTarefas());
+
+
+		//testanto remover tarefas
+		listaTarefa.removerTarefa("Tarefa 1");
+		//remove os dois "Tarefa 1"
+		System.out.println("O número total de elementos na lista é: " + listaTarefa.obterNumeroTotalTarefas());
+		
+		//para obter as descrições do que temos na lista
+		//é necessário fazer o cast para ToString na classe Tarefa
+		listaTarefa.obterDescricaoTarefas();
+	}
+}
+
+-------------------------------------------------------------------------------------------
+2. Carrinho de Compras:
+Crie uma classe chamada "CarrinhoDeCompras" que representa um carrinho de compras online. O carrinho deve ser implementado como uma lista de itens. Cada item é representado por uma classe chamada "Item" que possui atributos como nome, preço e quantidade. Implemente os seguintes métodos:
+
+adicionarItem(String nome, double preco, int quantidade): Adiciona um item ao carrinho com o nome, preço e quantidade especificados.
+removerItem(String nome): Remove um item do carrinho com base no seu nome.
+calcularValorTotal(): Calcula e retorna o valor total do carrinho, levando em consideração o preço e a quantidade de cada item.
+exibirItens(): Exibe todos os itens presentes no carrinho, mostrando seus nomes, preços e quantidades.
+Pesquisa em List
+
+-------------------------------------------------------------------------------------------
+
